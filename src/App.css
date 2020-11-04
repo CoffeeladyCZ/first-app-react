@@ -1,3 +1,9 @@
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}
 .App {
   text-align: left;
 }
