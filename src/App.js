@@ -26,5 +26,16 @@ ReactDOM.render(
   <h2>Netuším jak smazat tehle margin</h2>, 
   document.getElementById('test')
 );
+const toDoList = (
+  <ol>
+    <li>One</li>
+    <li>Two</li>
+  </ol>
+);
+
+ReactDOM.render(
+  toDoList, 
+  document.getElementById('test-second')
+);
 
 export default App;

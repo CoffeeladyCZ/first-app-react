@@ -47,6 +47,8 @@ a:hover {
   }
 }
 
+/* moje úpravy */
+
 #test {
   color: #ffffff;
   text-align: center;
@@ -54,3 +56,7 @@ a:hover {
   margin-block-start: 0;
   margin-block-end: 0;
 } 
+#test-second {
+  color: #ffffff;
+  background-color: #909090;
+}
