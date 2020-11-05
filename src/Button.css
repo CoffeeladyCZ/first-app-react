@@ -1,0 +1,16 @@
+.button {
+  height: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600px;
+}
+
+.buy {
+  background-color: #5daf0e;
+  border-radius: 8px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 300px;
+}
+
+/* TODO for @marcela add 3 more types of button styles */
