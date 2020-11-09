@@ -1,14 +1,9 @@
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: #fff;
-}
 .App {
-  text-align: left;
-}
-.App p {
-  font-size: 1.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  min-height: 800px;
+  align-items: center;
 }
 
 .App-logo {
@@ -20,43 +15,4 @@ a:hover {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  margin: 0;
-  background-color: #909090;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: left;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #555;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* moje úpravy */
-
-#test {
-  color: #ffffff;
-  text-align: center;
-  background-color: #909090;
-  margin-block-start: 0;
-  margin-block-end: 0;
-} 
-#test-second {
-  color: #ffffff;
-  background-color: #909090;
 }
