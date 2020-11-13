@@ -3,7 +3,8 @@ import './Product-box.css';
 
 class ProductBox extends React.Component {
     render() {
-        return <div className="product-box"></div>
+        const {title} = this.props.div; 
+    return <div className="product-box"><p>{title}</p></div>
         
     }
 }

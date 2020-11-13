@@ -22,11 +22,16 @@ function App() {
   return (
     <div className="App">
       <img src={logo} className="App-logo" alt="logo" />
-      <ProductBox div={productBox} />
-      <ProductBox div={productBox} />
-      <ProductBox div={productBox} />
-      <Button button={greyButton}/>
-      <Button button={button}/>
+        <ProductBox div={productBox} />
+        <ProductBox div={productBox} />
+        <ProductBox div={productBox} />
+     
+      <div className="App-button">
+        <Button button={greyButton}/>
+        <Button button={button}/>
+      </div>
+    
+
 
     </div>
   );

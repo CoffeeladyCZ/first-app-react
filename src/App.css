@@ -4,6 +4,7 @@
   /* justify-content: center; */
   min-height: 800px;
   align-items: center;
+  
 }
 
 .App-logo {
@@ -12,6 +13,7 @@
   justify-content: flex-start;
   align-self: flex-start;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
