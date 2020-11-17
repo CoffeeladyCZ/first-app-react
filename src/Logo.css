@@ -1,0 +1,15 @@
+.leftnav {
+    height: 100px;
+    pointer-events: none;
+    justify-content: flex-start;
+    align-self: flex-start;
+  }
+
+.rightnav {
+    height: 3.125rem;
+    justify-content: flex-end;
+    align-self: flex-start;
+    margin: 10px 20px;
+}
+
+ 

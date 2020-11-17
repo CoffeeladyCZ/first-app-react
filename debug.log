@@ -1,2 +1,2 @@
 [1112/001955.648:ERROR:directory_reader_win.cc(43)] FindFirstFile: Systï¿½m nemï¿½ï¿½e nalï¿½zt uvedenou cestu. (0x3)
-gi
+gi[1114/160110.117:ERROR:directory_reader_win.cc(43)] FindFirstFile: Systém nemùže nalézt uvedenou cestu. (0x3)

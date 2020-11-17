@@ -11,3 +11,19 @@
 .product-box:last-child {
     margin-right: 0;
 }
+
+.description {
+    margin: 10px 30px 50px 30px;
+    text-align: left;
+}
+
+.imageProduct {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+}
+.price {
+    font-weight: 600;
+    color: #ec513c;
+    font-size: 18px;
+}
