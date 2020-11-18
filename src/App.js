@@ -3,6 +3,8 @@ import React from 'react';
 import logo from './img/coffee_logo.png';
 import kosik from './img/kosik.png';
 import './img/coffee.svg';
+import './img/bone.svg';
+import './img/socks.svg';
 
 import './App.css';
 
@@ -26,21 +28,18 @@ const productBox = {
   price: "2 150 Kč",
   description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum fermentum tortor id mi. Pellentesque sapien. Praesent id justo."
 };
-const productBoxImage = {
-  first: {
-    alt: "coffee",
-    src: "./img/coffee.svg"
-  },
-  second: {
-    alt: "bone",
-    src: "./img/bone.svg"
-  },
-  third: {
-    alt: "socks",
-    src: "./img/socks.svg"
-  }
-}
-
+const coffee = {
+  alt: "coffee",
+  src: "./img/coffee.svg"
+};
+const bone =  {
+  alt: "bone",
+  src: "./img/bone.svg"
+};
+const socks = {
+  alt: "socks",
+  src: "./img/socks.svg"
+};
 
 function App() {
   return (
@@ -54,9 +53,9 @@ function App() {
       </nav>
      
       <section className="box">
-        <ProductBox div={productBox} />
-        <ProductBox div={productBox} />
-        <ProductBox div={productBox} />
+        <ProductBox alt="coffee" src={coffee} div={productBox} />
+        <ProductBox alt="bone" src={bone} div={productBox} />
+        <ProductBox alt="socks" src={socks} div={productBox} />
       </section>
       
       <Button button={greyButton}/>
