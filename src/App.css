@@ -1,7 +1,6 @@
 .App {
   text-align: center;
   min-height: 800px;
-  
 }
 
 header {
@@ -14,10 +13,4 @@ header {
   display: flex;
   justify-content: center;
   margin: 100px 0;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
