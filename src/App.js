@@ -2,14 +2,16 @@ import React from 'react';
 
 import logo from './img/coffee_logo.png';
 import kosik from './img/kosik.png';
-import './img/coffee.svg';
+import coffee from './img/coffee.svg';
+import bone from './img/bone.svg';
+import socks from './img/socks.svg';
 
 import './App.css';
 
-import Button from './Button';
-import ProductBox from './Product-box';
-import Logo from './Logo';
-import TopMenu from './TopMenu';
+import Button from './components/Button';
+import ProductBox from './components/ProductBox';
+import Logo from './components//Logo';
+import TopMenu from './components//TopMenu';
 
 
 // this is our data which we are passing as props to <Button component />
@@ -21,7 +23,7 @@ const greyButton = {
   title: "Detail",
   type: "grey"
 }
-const productBox = {
+const productBoxContent = {
   title: "Product",
   price: "2 150 Kč",
   description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum fermentum tortor id mi. Pellentesque sapien. Praesent id justo."
@@ -29,15 +31,15 @@ const productBox = {
 const productBoxImage = {
   first: {
     alt: "coffee",
-    src: "./img/coffee.svg"
+    src: coffee
   },
   second: {
     alt: "bone",
-    src: "./img/bone.svg"
+    src: bone
   },
   third: {
     alt: "socks",
-    src: "./img/socks.svg"
+    src: socks
   }
 }
 
@@ -45,26 +47,22 @@ const productBoxImage = {
 function App() {
   return (
     <div className="App">
-      <header> 
+      <header>
         <Logo alt='coffee-logo' src={logo} />
         <Logo alt='kosik' src={kosik} />
-      </header>  
+      </header>
       <nav>
         <TopMenu />
       </nav>
-     
+
       <section className="box">
-        <ProductBox div={productBox} />
-        <ProductBox div={productBox} />
-        <ProductBox div={productBox} />
+        <ProductBox content={productBoxContent} image={productBoxImage.first}/>
+        <ProductBox content={productBoxContent} image={productBoxImage.second}/>
+        <ProductBox content={productBoxContent} image={productBoxImage.third}/>
       </section>
-      
+
       <Button button={greyButton}/>
       <Button button={button}/>
-
-    
-
-
     </div>
   );
 }
