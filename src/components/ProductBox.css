@@ -12,7 +12,7 @@
 }
 
 .description {
-  margin: 10px 30px 50px 30px;
+  margin: 10px 30px 0 30px;
   text-align: left;
 }
 
@@ -29,4 +29,26 @@
 
 .buttons {
   display: flex;
+}
+
+.nameOfProduct {
+  font-size: 24px;
+  font-weight: 600;
+  color: #66543B;
+}
+
+.buttonBorder {
+  background-color: #fff;
+  color: #66543B;
+  font-weight: 600;
+  border: 2px solid #66543B;
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+.minus {
+  padding: 5px 11px;
+}
+.buttonBorder:hover {
+  background-color: #66543B;
+  color: #fff;
 }

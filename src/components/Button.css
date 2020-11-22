@@ -21,17 +21,19 @@
 }
 
 /* TODO for @marcela add 3 more types of button styles */
-.grey {
+.brown {
   border: 1px solid;
-  background-color: rgb(59, 58, 58);
+  background-color: #66543B;
   width: 200px;
 }
-.grey:hover {
-  color: rgb(59, 58, 58);
+.brown:hover {
+  color: #66543B;
   background-color: #ffffff;
 }
 
 .white {
-  border: 1px solid;
+  border: 1px solid #66543B;
   background-color: #ffffff;
+  color: #66543B;
+  width: 200px;
 }

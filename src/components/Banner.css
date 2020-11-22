@@ -1,0 +1,41 @@
+.sectionBanner {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.sectionBanner p {
+  font-size: 3em;
+  color: #fff;
+}
+.secondBannerLittle {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainBanner {
+  width: 800px;
+  height: 400px;
+  background-color: #B8976A;
+  border-radius: 4px;
+  /* display: flex; */
+  justify-content: center;
+}
+.mainBanner:hover {
+  transform: scale(1.02); 
+  transition-duration: 0.3s;
+}
+
+.secondBanner {
+  width: 440px;
+  height: 190px;
+  background-color: #ECE0D0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.thirdBanner {
+  width: 440px;
+  height: 190px;
+  background-color: #ECE0D0;
+  border-radius: 4px;
+}
