@@ -1,0 +1,30 @@
+.informationBox {
+  display: flex;
+  justify-content: center;
+}
+.informationBoxContent {
+  width: 600px;
+  height: 400px;
+  border-radius: 4px;
+  text-align: start;
+}
+.informationBoxContentInside {
+  padding: 50px;
+  font-size: 20px;
+}
+
+.left {
+  background-color: #B8976A;
+  margin-right: 30px;
+}
+.right {
+  background-color: #ECE0D0;
+}
+.nadpis {
+  font-size: 24px;
+  font-weight: 600;
+}
+.boxSecondContent {
+  font-size: 20px;
+  padding: 50px;
+}

@@ -3,9 +3,9 @@ import './ProductBox.css';
 
 import Button from './Button';
 
-const greyButton = {
+const brownButton = {
     title: "Koupit",
-    type: "grey"
+    type: "brown"
 };
 
 class ProductBox extends React.Component {
@@ -47,14 +47,14 @@ class ProductBox extends React.Component {
       <div className="product-box">
         <img className="imageProduct" src={src} alt={alt} />
 
-        <p>{title}</p>
+        <p className="nameOfProduct">{title}</p>
         <p className="description">{description}</p>
         <p className="price">{price}</p>
 
-        <button onClick={this.removeProduct}> - </button>
+        <button className="buttonBorder minus" onClick={this.removeProduct}> - </button>
         <span>{this.state.count}</span>
-        <button onClick={this.addProduct}> + </button>
-        <Button button={greyButton} onClick={this.addProduct}/>
+        <button className="buttonBorder" onClick={this.addProduct}> + </button>
+        <Button button={brownButton} onClick={this.addProduct}/>
       </div>
     );
   }

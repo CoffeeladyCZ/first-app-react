@@ -1,0 +1,18 @@
+.instagramFeed img {
+  width: 120px;
+  height: 120px;
+  display: inline;
+  border: 1px solid #66543B;
+  padding: 15px;
+}
+
+.instagramTop {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.instagramTop h3 {
+  margin: 0;
+  padding-right: 50px;
+}

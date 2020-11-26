@@ -1,0 +1,16 @@
+.footer {
+  background-color: #ECE0D0;
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footerContent {
+  padding: 30px 20px;
+  text-align: left;
+}
