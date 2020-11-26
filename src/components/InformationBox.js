@@ -9,13 +9,13 @@ class InformationBox extends React.Component {
       <section className="informationBox">
         <div className="informationBoxContent left">
           <div className="informationBoxContentInside">
-            <p class="nadpis">{nadpis}</p>
+            <p className="nadpis">{nadpis}</p>
             <ul>
               <li>{liFirst}</li>
               <li>{liSecond}</li>
               <li>{liThird}</li>
             </ul>
-          </div> 
+          </div>
         </div>
         <div className="informationBoxContent right">
           <p className="boxSecondContent">{text}</p>

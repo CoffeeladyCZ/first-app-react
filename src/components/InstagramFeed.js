@@ -28,7 +28,7 @@ class InstagramFeed extends React.Component {
           <img src={instaImage} />
         </div>
       </div>
-      
+
     )
   }
 }
