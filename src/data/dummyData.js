@@ -2,6 +2,11 @@ import coffee from '../img/coffee.svg';
 import bone from '../img/bone.svg';
 import socks from '../img/socks.svg';
 import arabica from '../img/coffee-arabica.svg';
+import bannerFirst from '../img/banner1.jpg';
+import bannerSecond from '../img/banner2.jpg';
+import bannerThird from '../img/banner3.jpg';
+
+
 
 export const productBoxContent = {
   firstProduct: {
@@ -81,3 +86,10 @@ export const informationBoxContent = {
     liThird: "Třetí zajímavost",
     text: "Tady bude nějaký úžasný text o tom, že bez kávy nelze žít. Vážně, je totiž skvělá."
 }
+
+export const carouselBanner = {
+  bannerFirst: bannerFirst,
+  bannerSecond: bannerSecond,
+  bannerThird: bannerThird
+}
+

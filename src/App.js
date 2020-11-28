@@ -13,7 +13,7 @@ import InformationBox from './components/InformationBox';
 import InstagramFeed from './components/InstagramFeed';
 import Footer from './components/Footer';
 
-import { productBoxContent, bannerSection, productBoxImage, informationBoxContent, brownButton, button } from './data/dummyData';
+import { productBoxContent, bannerSection, productBoxImage, informationBoxContent, brownButton, button, carouselBanner } from './data/dummyData';
 
 import './App.css';
 
@@ -56,18 +56,15 @@ class App extends React.Component {
         </nav>
 
         <section className="sectionBanner">
-          <Carousel showArrows={true}>
-            <div>
-                <img src={logo} />
-                <p className="legend">Legend 1</p>
+          <Carousel showArrows={true} autoPlay={true} interval={10000}>
+            <div className='mainBanner'>
+                <img src={carouselBanner.bannerFirst} />
             </div>
-            <div>
-                <img src={logo} />
-                <p className="legend">Legend 2</p>
+            <div className='mainBanner'>
+                <img src={carouselBanner.bannerSecond} />
             </div>
-            <div>
-                <img src={logo} />
-                <p className="legend">Legend 3</p>
+            <div className='mainBanner'>
+                <img src={carouselBanner.bannerThird} />
             </div>
           </Carousel>
 
