@@ -18,14 +18,14 @@ class InstagramFeed extends React.Component {
           <Button button={buttonInstagram} />
         </div>
         <div className="instagramFeed">
-          <img src={instaImage} alt='' />
-          <img src={instaImage} alt='' />
-          <img src={instaImage} alt='' />
-          <img src={instaImage} alt='' />
-          <img src={instaImage} alt='' />
-          <img src={instaImage} alt='' />
-          <img src={instaImage} alt='' />
-          <img src={instaImage} alt='' />
+          <img src={instaImage} />
+          <img src={instaImage} />
+          <img src={instaImage} />
+          <img src={instaImage} />
+          <img src={instaImage} />
+          <img src={instaImage} />
+          <img src={instaImage} />
+          <img src={instaImage} />
         </div>
       </div>
 

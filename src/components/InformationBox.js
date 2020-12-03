@@ -5,10 +5,9 @@ class InformationBox extends React.Component {
   render () {
     const {nadpis, liFirst, liSecond, liThird} = this.props.content;
     const {text} = this.props.content;
-    const { changeColor } = this.props;
     return (
       <section className="informationBox">
-        <div className="informationBoxContent left" onClick={changeColor}>
+        <div className="informationBoxContent left">
           <div className="informationBoxContentInside">
             <p className="nadpis">{nadpis}</p>
             <ul>
