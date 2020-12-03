@@ -12,17 +12,20 @@ import Banner from './components/Banner';
 import InformationBox from './components/InformationBox';
 import InstagramFeed from './components/InstagramFeed';
 import Footer from './components/Footer';
+import Clock from './components/Clock';
 
-import { productBoxContent, bannerSection, productBoxImage, informationBoxContent, brownButton, button, carouselBanner } from './data/dummyData';
+import { productBoxContent, bannerSection, productBoxImage, informationBoxContent, carouselBanner } from './data/dummyData';
 
 import './App.css';
 
 class App extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       count: 0,
+      date: new Date() // může být tady?
+      // color: true, - tohle tu je taky asi špatně
     }
   }
 
@@ -44,11 +47,44 @@ class App extends React.Component {
     }
   };
 
+  // zobrazení aktuálního času - háže mi chybu v Clock.js
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+    );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
+  tick() {
+    this.setState({
+      date: new Date()
+    });
+  }
+
+  // změna barvy banneru při kliknutí
+
+  // changeColor = () => {
+  //   if (this.state.color === true) {
+  //     this.setState({
+  //       className: 'pink' // tady nevím, co má vlastně být
+  //     });
+  //   } else {
+  //     this.setState({
+  //       className: 'brown'
+  //     });
+  //   }
+  // };
+
   render() {
     return (
       <div className="App">
         <header>
           <Logo alt='coffee-logo' src={logo} />
+          <Clock />
           <Logo alt='kosik' src={kosik} count={this.state.count}/>
         </header>
         <nav>
@@ -58,13 +94,13 @@ class App extends React.Component {
         <section className="sectionBanner">
           <Carousel showArrows={true} autoPlay={true} interval={10000}>
             <div className='mainBanner'>
-                <img src={carouselBanner.bannerFirst} />
+                <img src={carouselBanner.bannerFirst} alt='' />
             </div>
             <div className='mainBanner'>
-                <img src={carouselBanner.bannerSecond} />
+                <img src={carouselBanner.bannerSecond} alt='' />
             </div>
             <div className='mainBanner'>
-                <img src={carouselBanner.bannerThird} />
+                <img src={carouselBanner.bannerThird} alt='' />
             </div>
           </Carousel>
 
@@ -102,7 +138,11 @@ class App extends React.Component {
         </section>
 
         <section className="sectionBox">
-          <InformationBox content={informationBoxContent} />
+          <InformationBox 
+            content={informationBoxContent}
+            changeColor={this.changeColor}
+            color={this.state.color}
+                           />
         </section>
 
         <section>
