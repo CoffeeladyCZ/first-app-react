@@ -24,7 +24,7 @@ class App extends React.Component {
 
     this.state = {
       count: 0,
-      date: new Date() // může být tady?
+      date: null // může být tady?
       // color: true, - tohle tu je taky asi špatně
     }
   }
@@ -51,7 +51,7 @@ class App extends React.Component {
   componentDidMount() {
     this.timerID = setInterval(
       () => this.tick(),
-      1000
+      3000
     );
   }
 
@@ -84,7 +84,7 @@ class App extends React.Component {
       <div className="App">
         <header>
           <Logo alt='coffee-logo' src={logo} />
-          <Clock />
+          <Clock date={this.state.date}/>
           <Logo alt='kosik' src={kosik} count={this.state.count}/>
         </header>
         <nav>
@@ -138,7 +138,7 @@ class App extends React.Component {
         </section>
 
         <section className="sectionBox">
-          <InformationBox 
+          <InformationBox
             content={informationBoxContent}
             changeColor={this.changeColor}
             color={this.state.color}
