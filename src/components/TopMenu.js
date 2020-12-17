@@ -1,6 +1,6 @@
 import React from 'react';
 import './TopMenu.css';
-import './Footer';
+import Dropdown from './Dropdown';
 
 class TopMenu extends React.Component {
   render () {
@@ -8,7 +8,7 @@ class TopMenu extends React.Component {
       <nav className="topMenu">
         <ul>
           <li><a href="#">Kávovary</a></li>
-          <li><a href="#">Káva</a></li>
+          <li><Dropdown title="Káva" /></li>
           <li><a href="#">Příslušenství</a></li>
           <li><a href="#">O nás</a></li>
           <li><a href="contact">Kontakt</a></li>
