@@ -24,8 +24,10 @@ class App extends React.Component {
 
     this.state = {
       count: 0,
-      date: new Date() // může být tady?
-      // color: true, - tohle tu je taky asi špatně
+      // date: new Date()
+
+      date: null, // může být tady?
+      color: true //tohle tu je taky asi špatně
     }
   }
 
@@ -51,7 +53,7 @@ class App extends React.Component {
   componentDidMount() {
     this.timerID = setInterval(
       () => this.tick(),
-      1000
+      3000
     );
   }
 
@@ -67,24 +69,24 @@ class App extends React.Component {
 
   // změna barvy banneru při kliknutí
 
-  // changeColor = () => {
-  //   if (this.state.color === true) {
-  //     this.setState({
-  //       className: 'pink' // tady nevím, co má vlastně být
-  //     });
-  //   } else {
-  //     this.setState({
-  //       className: 'brown'
-  //     });
-  //   }
-  // };
+  changeColor = () => {
+    if (this.state.color === true) {
+      this.setState({
+        className: 'pink' // tady nevím, co má vlastně být
+      });
+    } else {
+      this.setState({
+        className: 'brown'
+      });
+    }
+  };
 
   render() {
     return (
       <div className="App">
         <header>
           <Logo alt='coffee-logo' src={logo} />
-          <Clock />
+          <Clock date={this.state.date} />
           <Logo alt='kosik' src={kosik} count={this.state.count}/>
         </header>
         <nav>
