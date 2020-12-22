@@ -7,7 +7,7 @@
 
 .item {
   position: relative;
-  background: red;
+  background: #ECE0D0;
   z-index: 2;
   padding: 10px;
 }

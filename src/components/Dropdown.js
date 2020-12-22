@@ -1,22 +1,53 @@
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
+import React from 'react';
 
 import './Dropdown.css';
 
-const Dropdown = ({title}) => {
-  const [isOpen, setOpen] = React.useState(false); 
-  console.log(isOpen, 'open');
-  return (
-    <div className="container" 
-        onMouseEnter={() => setOpen(true)}
-        onMouseLeave={() => setOpen(false)}
-    >
-      {title}
-      {isOpen && <div className="isOpen">
-        <div className="item" onClick={() => alert("klikl si")}>Kolumbie</div>
-        <div className="item" onClick={() => alert("klikl si")}>Kenya</div>
-      </div>}
-    </div>
-  )
+// * použití Hooks *
+
+// const Dropdown = ({title}) => {
+//   const [isOpen, setOpen] = React.useState(false);  
+//   console.log(isOpen, 'open');
+//   return (
+//     <div className="container" 
+//         onMouseEnter={() => setOpen(true)}
+//         onMouseLeave={() => setOpen(false)}
+//     >
+//       {title}
+//       {isOpen && <div className="isOpen">
+//         <div className="item" onClick={() => alert("klikl si")}>Kolumbie</div>
+//         <div className="item" onClick={() => alert("klikl si")}>Kenya</div>
+//       </div>}
+//     </div>
+//   )
+// }
+class Dropdown extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isOpen: false
+    }
+  }
+
+  render() {
+    const {title} = this.props;
+    const {brandFirst, brandSecond, brandThird} = this.props;
+    console.log(this.state.isOpen);
+    return (
+      <div className="container"
+          onMouseEnter={() => this.setState( {isOpen: true} )}
+          onMouseLeave={() => this.setState( {isOpen: false} )}
+      >
+          {title}
+          {this.state.isOpen && <div className="isOpen">
+              <div className="item">{brandFirst}</div>
+              <div className="item">{brandSecond}</div>
+              <div className="item">{brandThird}</div>
+            </div>}
+      </div>
+    )
+  }
 }
 
 export default Dropdown;

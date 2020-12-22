@@ -2,12 +2,17 @@ import React from 'react';
 import './TopMenu.css';
 import Dropdown from './Dropdown';
 
+import { dropdown } from '../data/dummyData';
+
 class TopMenu extends React.Component {
   render () {
     return (
       <nav className="topMenu">
         <ul>
-          <li><a href="#">Kávovary</a></li>
+          <li><Dropdown title="Kávovary" 
+                        content={dropdown.kavovary.brandFirst}
+              />
+          </li>
           <li><Dropdown title="Káva" /></li>
           <li><a href="#">Příslušenství</a></li>
           <li><a href="#">O nás</a></li>

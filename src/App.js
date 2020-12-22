@@ -24,10 +24,8 @@ class App extends React.Component {
 
     this.state = {
       count: 0,
-      // date: new Date()
-
-      date: null, // může být tady?
-      color: true //tohle tu je taky asi špatně
+      date: null, 
+      color: true 
     }
   }
 
@@ -49,7 +47,7 @@ class App extends React.Component {
     }
   };
 
-  // zobrazení aktuálního času - háže mi chybu v Clock.js
+  // zobrazení aktuálního času 
   componentDidMount() {
     this.timerID = setInterval(
       () => this.tick(),
@@ -72,7 +70,7 @@ class App extends React.Component {
   changeColor = () => {
     if (this.state.color === true) {
       this.setState({
-        className: 'pink' // tady nevím, co má vlastně být
+        className: 'pink' 
       });
     } else {
       this.setState({
@@ -150,7 +148,8 @@ class App extends React.Component {
         <section>
           <h3>Produkty za výhodnou cenu</h3>
           <div className="sectionBox">
-            <ProductBox content={productBoxContent.fourthProduct} image={productBoxImage.fourth} />
+            <ProductBox content={productBoxContent.fourthProduct} 
+                        image={productBoxImage.fourth} />
             <ProductBox content={productBoxContent.firstProduct} image={productBoxImage.first} />
             <ProductBox content={productBoxContent.secondProduct} image={productBoxImage.second} />
             <ProductBox content={productBoxContent.thirdProduct} image={productBoxImage.third} />
@@ -158,8 +157,6 @@ class App extends React.Component {
         </section>
 
         <section class>
-
-
         </section>
 
         <section className="sectionBox">
