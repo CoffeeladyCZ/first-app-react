@@ -156,7 +156,8 @@ class App extends React.Component {
           </div>
         </section>
 
-        <section class>
+        <section className="sectionBox">
+          <div></div>
         </section>
 
         <section className="sectionBox">

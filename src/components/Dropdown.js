@@ -3,6 +3,8 @@ import React from 'react';
 
 import './Dropdown.css';
 
+import { dropdown } from '../data/dummyData';
+
 // * použití Hooks *
 
 // const Dropdown = ({title}) => {
@@ -32,7 +34,7 @@ class Dropdown extends React.Component {
 
   render() {
     const {title} = this.props;
-    const {brandFirst, brandSecond, brandThird} = this.props;
+    const {kavovary} = this.props;
     console.log(this.state.isOpen);
     return (
       <div className="container"
@@ -41,9 +43,9 @@ class Dropdown extends React.Component {
       >
           {title}
           {this.state.isOpen && <div className="isOpen">
-              <div className="item">{brandFirst}</div>
-              <div className="item">{brandSecond}</div>
-              <div className="item">{brandThird}</div>
+              <div className="item">{dropdown.kavovary.brandFirst}</div>
+              <div className="item">{dropdown.kavovary.brandSecond}</div>
+              <div className="item">{dropdown.kavovary.brandThird}</div>
             </div>}
       </div>
     )
