@@ -93,3 +93,15 @@ export const carouselBanner = {
   bannerThird: bannerThird
 }
 
+export const dropdown = {
+  kavovary: {
+    brandFirst: 'Nuova Simonelli',
+    brandSecond: 'La Marzocco',
+    brandThird:  'Modbar'
+  },
+  coffee: {
+    brandFirst: 'The Naughty Dog',
+    brandSecond: 'Nordbeans',
+    brandThird: 'The Candy Cane'
+  }
+}

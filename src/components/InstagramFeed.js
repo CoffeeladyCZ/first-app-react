@@ -2,7 +2,6 @@ import React from 'react';
 import Feed from 'react-instagram-authless-feed';
 
 import './InstagramFeed.css';
-// import instaImage from '../img/instagram.svg';
 import Button from './Button';
 
 const buttonInstagram = {
@@ -19,7 +18,7 @@ class InstagramFeed extends React.Component {
           <Button button={buttonInstagram} />
         </div>
         <div className="instagramFeed">
-          <Feed userName="coffeeladycz" limit="12" />
+          <Feed userName="coffeeladycz" limit="9" />
         </div>
       </div>
 

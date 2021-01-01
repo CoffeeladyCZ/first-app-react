@@ -24,6 +24,10 @@
     border: 1px solid #66543B;
     list-style: none; 
     order: 5;
+
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
 }
 
 .topMenu a:hover {

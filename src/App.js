@@ -10,7 +10,7 @@ import Logo from './components//Logo';
 import TopMenu from './components//TopMenu';
 import Banner from './components/Banner';
 import InformationBox from './components/InformationBox';
-import InstagramFeed from './components/InstagramFeed';
+// import InstagramFeed from './components/InstagramFeed'; Commented out because this library doesnt work due to https://github.com/jamesmoriarty/react-instagram-authless-feed/issues/12
 import Footer from './components/Footer';
 import Clock from './components/Clock';
 
@@ -24,10 +24,8 @@ class App extends React.Component {
 
     this.state = {
       count: 0,
-      // date: new Date()
-
-      date: null, // může být tady?
-      color: true //tohle tu je taky asi špatně
+      date: null,
+      color: true
     }
   }
 
@@ -49,7 +47,7 @@ class App extends React.Component {
     }
   };
 
-  // zobrazení aktuálního času - háže mi chybu v Clock.js
+  // zobrazení aktuálního času
   componentDidMount() {
     this.timerID = setInterval(
       () => this.tick(),
@@ -68,11 +66,10 @@ class App extends React.Component {
   }
 
   // změna barvy banneru při kliknutí
-
   changeColor = () => {
     if (this.state.color === true) {
       this.setState({
-        className: 'pink' // tady nevím, co má vlastně být
+        className: 'pink'
       });
     } else {
       this.setState({
@@ -140,11 +137,11 @@ class App extends React.Component {
         </section>
 
         <section className="sectionBox">
-          <InformationBox 
+          <InformationBox
             content={informationBoxContent}
             changeColor={this.changeColor}
             color={this.state.color}
-                           />
+          />
         </section>
 
         <section>
@@ -157,14 +154,13 @@ class App extends React.Component {
           </div>
         </section>
 
-        <section class>
-
-
-        </section>
-
         <section className="sectionBox">
-          <InstagramFeed />
+          <div></div>
         </section>
+
+         {/* <section className="sectionBox">
+           <InstagramFeed />
+        </section> */}
         <footer>
           <Footer />
         </footer>

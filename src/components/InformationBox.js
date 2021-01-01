@@ -1,10 +1,11 @@
 import React from 'react';
+
 import './InformationBox.css';
 
 class InformationBox extends React.Component {
   render () {
-    const {nadpis, liFirst, liSecond, liThird} = this.props.content;
-    const {text} = this.props.content;
+    const {nadpis, liFirst, liSecond, liThird, text} = this.props.content;
+
     return (
       <section className="informationBox">
         <div className="informationBoxContent left">

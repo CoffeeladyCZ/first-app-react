@@ -10,7 +10,8 @@ class Button extends React.Component {
   };
 
   render() {
-    const { type, title, onClick } = this.props.button; // This is helping us to write less code in case we would have a log file with many props usage.
+    const { type, title } = this.props.button; // This is helping us to write less code in case we would have a log file with many props usage.
+    const { onClick } = this.props;
 
     return <button onClick={onClick ? this.handleClick : undefined} className={`button ${type}`}>{title}</button>
   }
