@@ -8,18 +8,18 @@
 
 .item {
   position: relative;
-  background: #ECE0D0;
-  color: #66543B;
+  background: #ff6954;;
+  color: #fff;
   width: 80%;
   z-index: 2;
   padding: 12px;
-  border: 1px solid #66543B;
+  border: 1px solid #fff;
   margin: 5px;
 }
 
 .isOpen {
   position: absolute;
-  background: #ECE0D0;
+  background: #ff6954;;
   width: 100%;
   top: 100%;
   padding: 10px;

@@ -2,7 +2,7 @@
   width: 350px;
   height: 450px;
   border: 1px solid rgb(158, 156, 156);
-  border-radius: 4px;
+  border-radius: 8px;
   float: left;
   margin-right: 30px;
 }
@@ -23,7 +23,7 @@
 }
 .price {
   font-weight: 600;
-  color: #ec513c;
+  color: #683539;
   font-size: 18px;
 }
 
@@ -34,14 +34,14 @@
 .nameOfProduct {
   font-size: 24px;
   font-weight: 600;
-  color: #66543B;
+  color: #683539;
 }
 
 .buttonBorder {
   background-color: #fff;
-  color: #66543B;
+  color: #683539;
   font-weight: 600;
-  border: 2px solid #66543B;
+  border: 2px solid #683539;
   padding: 5px 10px;
   margin: 0 5px;
 }
@@ -49,6 +49,12 @@
   padding: 5px 11px;
 }
 .buttonBorder:hover {
-  background-color: #66543B;
+  background-color: #683539;
   color: #fff;
+}
+
+.product-box:hover {
+  transform: scale(1.02); 
+  transition-duration: 0.3s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
 }

@@ -22,7 +22,7 @@ export const productBoxContent = {
   thirdProduct: {
     title: "Ponožky s motivem kávy",
     price: "150 Kč",
-    description: "Každý kávomilec by je chtěl mít. Vyrobili jsme 30 párů ponožek, které vám bude barista ve vaší oblíbené kavárně závidět. "
+    description: "Každý kávomilec by je chtěl mít. Vyrobili jsme 30 párů ponožek, které vám bude barista ve vaší oblíbené kavárně závidět. Hnědá zrnka na 100% bavlně jsou vytvořena pro vás."
   },
   fourthProduct: {
     title: "Rostlinka Coffee Arabica",
@@ -68,13 +68,9 @@ export const bannerSection = {
     className: "mainBanner"
   },
   second: {
-    type: "cream",
-    text: "Bla Bla",
     className: "secondBanner"
   },
   third: {
-    type: "lightBrown",
-    text: "Bla Bla",
     className: "thirdBanner"
   }
 };
@@ -105,3 +101,5 @@ export const dropdown = {
     brandThird: 'The Candy Cane'
   }
 }
+
+

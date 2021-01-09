@@ -1,15 +1,18 @@
 import React from 'react';
 import './Logo.css';
 
-const Logo = ({src, alt, count}) => {
-  const logoClassName = (alt === 'coffee-logo' ? "leftnav" : "rightnav"); // ternarni operator
+const Logo = ({src, alt}) => {
+  const logoClassName = (alt === 'coffee-logo' ? "leftnav" : "none"); // ternarni operator
 
   return (
     <div>
-    <span>{count}</span>
-    <img src={src} className={logoClassName} alt={alt} />
+      <h1>Coffeeshot</h1>
+      <img src={src} className={logoClassName} alt={alt} />
     </div>
   )
 };
 
 export default Logo;
+
+
+// refaktorovat funkci, img dát zvlášť

@@ -1,0 +1,14 @@
+h4 {
+  font-size: 18px;
+  margin: 20px 0 10px 0;
+  color: rgba(255,255,255,.5);
+}
+
+.text {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.text p:hover {
+  color: #ff6954;
+}

@@ -3,9 +3,9 @@ import './ProductBox.css';
 
 import Button from './Button';
 
-const brownButton = {
+const orangeButton = {
     title: "Koupit",
-    type: "brown"
+    type: "orange"
 };
 
 class ProductBox extends React.Component {
@@ -25,7 +25,7 @@ class ProductBox extends React.Component {
         <button className="buttonBorder minus" onClick={handleRemoveProduct}> - </button>
         <span>{count}</span>
         <button className="buttonBorder" onClick={handleAddProduct}> + </button>
-        <Button button={brownButton} onClick={handleAddProduct}/>
+        <Button button={orangeButton} onClick={handleAddProduct}/>
       </div>
     );
   }

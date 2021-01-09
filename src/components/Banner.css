@@ -21,7 +21,7 @@
 }
 
 .mainBanner img {
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 /* .mainBanner:hover {
@@ -32,16 +32,16 @@
 .secondBanner {
   width: 440px;
   height: 190px;
-  background-color: #ECE0D0;
-  border-radius: 4px;
+  background-image: url("../img/table-1589012_1920.jpg");
+  border-radius: 8px;
   margin-bottom: 20px;
 }
 
 .thirdBanner {
   width: 440px;
   height: 190px;
-  background-color: #ECE0D0;
-  border-radius: 4px;
+  background-image: url("../img/warm-and-cozy-1975215_1920.jpg");
+  border-radius: 8px;
 }
 
 .carousel .slider-wrapper {

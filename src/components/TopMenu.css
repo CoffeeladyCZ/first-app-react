@@ -1,7 +1,7 @@
 .topMenu {
     display: flex;
     justify-content: space-around;
-    background-color: #66543B;
+    background-color: #683539 ;
     width: 100%;
 }
 
@@ -11,8 +11,10 @@
     font-size: 16px;
     padding: 10px 30px;
     color: #fff;
-    background-color: #66543B;
+    background-color: #683539 ;
     margin: 0;
+    transition: color .3s, box-shadow .3s;
+    box-shadow: inset 0 0 0 0 #ff6954;
 }
 .topMenu ul {
     margin: 0;
@@ -20,17 +22,17 @@
 }
 .topMenu li {
     display: inline-flex;
-    background-color: #66543B;
-    border: 1px solid #66543B;
+    background-color: #683539 ;
+    border: 1px solid#683539 ;
     list-style: none; 
     order: 5;
-
     text-transform: uppercase;
     font-size: 16px;
     color: #fff;
 }
 
 .topMenu a:hover {
-    background-color: #ECE0D0;
-    color: #66543B;
+    box-shadow: inset 100px 0 0 0 #ff6954;
+    background-color: #ff6954;;
+    color: #fff;
 }

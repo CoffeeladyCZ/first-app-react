@@ -2,6 +2,8 @@
   text-align: center;
   min-height: 800px;
   scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+  line-height: 24px;
 }
 
 header {
@@ -11,11 +13,24 @@ header {
 }
 
 h3 {
-  color: #69635C;
+  color: #683539;
   font-size: 32px;
 }
 .sectionBox {
   display: flex;
   justify-content: center;
-  margin: 50px 10px;
+  margin: 80px 10px;
+}
+
+footer {
+  background-color: #683539;
+  height: 380px;
+}
+
+.author {
+  font-size: 16px;
+  color: rgba(255,255,255,.5);  
+  text-align: end;
+  padding-right: 20px;
+  margin-top: 0;
 }

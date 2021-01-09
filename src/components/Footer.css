@@ -1,8 +1,9 @@
 .footer {
-  background-color: #ECE0D0;
+  background-color: #683539;
+  color: #fff;
   height: 200px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 .name {
   font-size: 20px;
@@ -10,7 +11,25 @@
   font-weight: 600;
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff6954;
+}
+
+.footerNameOfShop {
+  padding-top: 70px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+}
+
 .footerContent {
   padding: 30px 20px;
   text-align: left;
+  margin-bottom: 50px;
 }

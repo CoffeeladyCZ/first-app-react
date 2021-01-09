@@ -13,6 +13,7 @@ import InformationBox from './components/InformationBox';
 // import InstagramFeed from './components/InstagramFeed'; Commented out because this library doesnt work due to https://github.com/jamesmoriarty/react-instagram-authless-feed/issues/12
 import Footer from './components/Footer';
 import Clock from './components/Clock';
+import ShoppingCard from './components/ShoppingCard';
 
 import { productBoxContent, bannerSection, productBoxImage, informationBoxContent, carouselBanner } from './data/dummyData';
 
@@ -84,7 +85,7 @@ class App extends React.Component {
         <header>
           <Logo alt='coffee-logo' src={logo} />
           <Clock date={this.state.date} />
-          <Logo alt='kosik' src={kosik} count={this.state.count}/>
+          <ShoppingCard alt='shoppingCard' src={kosik} count={this.state.count}/>
         </header>
         <nav>
           <TopMenu />
@@ -104,8 +105,8 @@ class App extends React.Component {
           </Carousel>
 
           <div className="secondBannerLittle">
-            <Banner className={bannerSection.second} content={bannerSection.second} />
-            <Banner className={bannerSection.third} content={bannerSection.third} />
+            <Banner className={bannerSection.second} />
+            <Banner className={bannerSection.third} />
           </div>
         </section>
 
@@ -163,6 +164,7 @@ class App extends React.Component {
         </section> */}
         <footer>
           <Footer />
+          <p className="author">by Marcela Karafizievová</p>
         </footer>
       </div>
     );

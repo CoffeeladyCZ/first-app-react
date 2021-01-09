@@ -1,0 +1,27 @@
+.rightnav {
+  height: 3.125rem;
+  justify-content: flex-end;
+  align-self: flex-start;
+  margin: 10px 20px;
+}
+
+.circle {
+width: 25px;
+height: 25px;
+background-color: #ff6954;
+border: 2px solid #fff;
+color: #fff;
+border-radius: 50%;
+z-index: 1;
+position: absolute ; 
+top: 12px;
+right: 58px;
+}
+
+.shoppingBox {
+  display: flex;
+}
+
+img {
+  align-content: center;
+}
