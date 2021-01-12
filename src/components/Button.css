@@ -9,22 +9,11 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.green {
-  border: 1px solid;
-  background-color: #5daf0e;
-  width: 300px;
-}
-.green:hover {
-  border: 1px solid;
-  background-color: #ffffff;
-  color: #5daf0e
-}
-
 /* TODO for @marcela add 3 more types of button styles */
 .orange {
-  border: 1px solid;
+  border: 0.0625rem solid;
   background-color: #ff6954;;
-  width: 200px;
+  width: 12.5rem;
 }
 .orange:hover {
   color: #ff6954;;
@@ -32,8 +21,14 @@
 }
 
 .white {
-  border: 1px solid #66543B;
+  border: 0.0625rem solid #66543B;
   background-color: #ffffff;
   color: #66543B;
-  width: 200px;
+  width: 12.5rem;
+}
+
+@media (max-width: 1050px) {
+  .orange {
+    width: 9.375rem;
+  }
 }

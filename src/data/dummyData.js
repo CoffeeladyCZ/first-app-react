@@ -5,6 +5,7 @@ import arabica from '../img/coffee-arabica.svg';
 import bannerFirst from '../img/banner1.jpg';
 import bannerSecond from '../img/banner2.jpg';
 import bannerThird from '../img/banner3.jpg';
+import star from '../img/star.svg';
 
 
 
@@ -77,10 +78,10 @@ export const bannerSection = {
 
 export const informationBoxContent = {
     nadpis: "Proč bychom měli pít kávu?",
-    liFirst: "První zajímavost",
-    liSecond: "Druhá zajímavost",
-    liThird: "Třetí zajímavost",
-    text: "Tady bude nějaký úžasný text o tom, že bez kávy nelze žít. Vážně, je totiž skvělá."
+    liFirst: "Život je příliš krátký na špatnou kávu.",
+    liSecond: "Dobrá káva dělá den hezčí a veselejší.",
+    liThird: "Zapomeňte na lásku, propadněte kávě.",
+    text: "Ne nadarmo se říká, že život je příliš krátký na špatnou kávu. Naštěstí u špatnou kávu vůbec nemáme."
 }
 
 export const carouselBanner = {
@@ -102,4 +103,38 @@ export const dropdown = {
   }
 }
 
+export const footerBox = {
+  customerService: {
+    claim: 'Zákaznický servis',
+    first: 'Doprava a platba',
+    second: 'Obchodní podmínky',
+    third: 'Jak reklamovat zboží'
+  },
+  aboutUs: {
+    claim: 'Něco o nás',
+    first: 'Náš příběh',
+    second: 'Jak vybrat kávu',
+    third: 'Baristické kurzy'
+  }
+}
 
+export const reviews = {
+  reviewFirst: {
+    text: 'Když nevím jakou kávu si koupit, e-shop Coffeeshot je vždy jistota. Mají tu jen ty nejlepší kousky.',
+    author: 'Marcela',
+    src: star,
+    alt: 'star'
+  },
+  reviewSecond: {
+    text: 'Hlavně jejich přístup. Nikdo vám lépe neporadí, už při první větě cítíte, že milují kávu.',
+    author: 'Martin',
+    src: star,
+    alt: 'star'
+  },
+  reviewThird: {
+    text: 'Občas si chodím na jejich pobočku povídat o kávě. Zaměstnanci jsou skvělí.',
+    author: 'Anežka',
+    src: star,
+    alt: 'star'
+  }
+}

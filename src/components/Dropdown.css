@@ -1,6 +1,5 @@
 .container {
   position: relative;
-  margin-bottom: 10px;
   width: 180px;
   height: 20px;
   z-index: 1;
@@ -23,6 +22,7 @@
   width: 100%;
   top: 100%;
   padding: 10px;
-  margin-top: 11px;
+  /* margin-top: 11px; */
+  left: -10px;
   z-index: 1;
 }

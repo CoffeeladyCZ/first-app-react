@@ -25,7 +25,7 @@ class ProductBox extends React.Component {
         <button className="buttonBorder minus" onClick={handleRemoveProduct}> - </button>
         <span>{count}</span>
         <button className="buttonBorder" onClick={handleAddProduct}> + </button>
-        <Button button={orangeButton} onClick={handleAddProduct}/>
+        <Button className="orange" button={orangeButton} onClick={handleAddProduct}/>
       </div>
     );
   }

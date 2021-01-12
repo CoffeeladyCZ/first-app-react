@@ -3,7 +3,7 @@ import './Dropdown.css';
 
 import {dropdown} from '../data/dummyData';
 
-class DropdownDva extends React.Component {
+class DropdownSecond extends React.Component {
   constructor(props) {
     super(props);
 
@@ -32,4 +32,4 @@ class DropdownDva extends React.Component {
   }
 }
 
-export default DropdownDva;
+export default DropdownSecond;

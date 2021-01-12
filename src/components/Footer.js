@@ -4,7 +4,7 @@ import './Footer.css';
 
 import CustomerInfo from './CustomerInfo';
 
-// import { footerBox } from '../data/dummyData';
+import { footerBox } from '../data/dummyData';
 
 const footerContent = {
   name: 'Coffeeshot',
@@ -18,8 +18,18 @@ class Footer extends React.Component {
       <>
         <h3 className="footerNameOfShop">Coffeeshot</h3>
         <div className="footer">
-          <CustomerInfo />
-          <CustomerInfo />
+
+          <CustomerInfo claim={footerBox.customerService.claim}
+                        first={footerBox.customerService.first}
+                        second={footerBox.customerService.second}
+                        third={footerBox.customerService.third}  
+          />
+          <CustomerInfo claim={footerBox.aboutUs.claim}
+                        first={footerBox.aboutUs.first}
+                        second={footerBox.aboutUs.second}
+                        third={footerBox.aboutUs.third}
+          />
+
           <div id="contact" className="footerContent">
             <p className="name">{footerContent.name}</p>
             <p><a href="mailto: {footerContent}">{footerContent.email}</a></p>

@@ -14,8 +14,9 @@ import InformationBox from './components/InformationBox';
 import Footer from './components/Footer';
 import Clock from './components/Clock';
 import ShoppingCard from './components/ShoppingCard';
+import CustomerReviews from './components/CustomerReviews';
 
-import { productBoxContent, bannerSection, productBoxImage, informationBoxContent, carouselBanner } from './data/dummyData';
+import { productBoxContent, bannerSection, productBoxImage, informationBoxContent, carouselBanner, reviews } from './data/dummyData';
 
 import './App.css';
 
@@ -111,8 +112,8 @@ class App extends React.Component {
         </section>
 
         <section >
-          <h3>Naše nejnovější várka kávy</h3>
-          <div className="sectionBox">
+          <h3>Čerstvě pražená várka kávy</h3>
+          <div className="sectionBox productBoxNone">
             <ProductBox
               content={productBoxContent.firstProduct}
               image={productBoxImage.first}
@@ -147,16 +148,22 @@ class App extends React.Component {
 
         <section>
           <h3>Produkty za výhodnou cenu</h3>
-          <div className="sectionBox">
-            <ProductBox content={productBoxContent.fourthProduct} image={productBoxImage.fourth} />
-            <ProductBox content={productBoxContent.firstProduct} image={productBoxImage.first} />
-            <ProductBox content={productBoxContent.secondProduct} image={productBoxImage.second} />
-            <ProductBox content={productBoxContent.thirdProduct} image={productBoxImage.third} />
+          <div className="sectionBox productBoxes">
+            <ProductBox className="box" content={productBoxContent.fourthProduct} image={productBoxImage.fourth} />
+            <ProductBox className="box" content={productBoxContent.firstProduct} image={productBoxImage.first} />
+            <ProductBox className="box" content={productBoxContent.secondProduct} image={productBoxImage.second} />
+            <ProductBox className="box" content={productBoxContent.thirdProduct} image={productBoxImage.third} />
           </div>
         </section>
 
-        <section className="sectionBox">
-          <div></div>
+        <section>
+            <h3>Recenze zákazníků</h3>
+            <div className="sectionBox reviewBox">
+              <CustomerReviews text={reviews.reviewFirst.text} author={reviews.reviewFirst.author} src={reviews.reviewFirst.src} />
+              <CustomerReviews text={reviews.reviewSecond.text} author={reviews.reviewSecond.author} src={reviews.reviewSecond.src} />
+              <CustomerReviews text={reviews.reviewThird.text} author={reviews.reviewThird.author} src={reviews.reviewThird.src} />
+            </div>
+            
         </section>
 
          {/* <section className="sectionBox">

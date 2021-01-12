@@ -1,38 +1,75 @@
 .topMenu {
     display: flex;
     justify-content: space-around;
-    background-color: #683539 ;
+    background-color: #683539;
     width: 100%;
 }
 
-.topMenu a {
+.topMenu a,
+.topMenu > ul > li > div {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-    padding: 10px 30px;
     color: #fff;
-    background-color: #683539 ;
+    background-color: transparent ;
     margin: 0;
-    transition: color .3s, box-shadow .3s;
-    box-shadow: inset 0 0 0 0 #ff6954;
+    position: relative;
+    transition: all 0.15s ease-in;
+    z-index: 1;
 }
+
+.topMenu a::after,
+.topMenu > ul > li > div::after  {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    z-index: -1;
+    background-color: #ff6954;
+    transition: all 0.15s ease-in;
+
+}
+
+.topMenu a:hover::after,
+.topMenu > ul > li > div:hover::after {
+    width: 100%;
+    background-color: #ff6954;
+}
+
 .topMenu ul {
     margin: 0;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 .topMenu li {
     display: inline-flex;
-    background-color: #683539 ;
-    border: 1px solid#683539 ;
+    background-color: #683539;
+    border: 1px solid#683539;
     list-style: none; 
-    order: 5;
     text-transform: uppercase;
     font-size: 16px;
     color: #fff;
+    flex: 0 0 auto;
+    max-width: 12.5rem;
+    min-width: 6.25rem;
+    align-content: center;
+    align-items: center;
+    align-self: center;
 }
 
-.topMenu a:hover {
-    box-shadow: inset 100px 0 0 0 #ff6954;
-    background-color: #ff6954;;
+.topMenu li > * {
+    height: 100%;
+    padding: 0.625rem 1.875rem;
+}
+
+.topMenu a:hover,
+.topMenu >ul  > li > div:hover {
     color: #fff;
 }
