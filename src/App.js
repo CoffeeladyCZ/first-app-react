@@ -157,13 +157,12 @@ class App extends React.Component {
         </section>
 
         <section>
-            <h3>Recenze zákazníků</h3>
-            <div className="sectionBox reviewBox">
-              <CustomerReviews text={reviews.reviewFirst.text} author={reviews.reviewFirst.author} src={reviews.reviewFirst.src} />
-              <CustomerReviews text={reviews.reviewSecond.text} author={reviews.reviewSecond.author} src={reviews.reviewSecond.src} />
-              <CustomerReviews text={reviews.reviewThird.text} author={reviews.reviewThird.author} src={reviews.reviewThird.src} />
-            </div>
-            
+          <h3>Recenze zákazníků</h3>
+          <div className="sectionBox reviewBox">
+            <CustomerReviews text={reviews.reviewFirst.text} author={reviews.reviewFirst.author} />
+            <CustomerReviews text={reviews.reviewSecond.text} author={reviews.reviewSecond.author} />
+            <CustomerReviews text={reviews.reviewThird.text} author={reviews.reviewThird.author} />
+          </div> 
         </section>
 
          {/* <section className="sectionBox">

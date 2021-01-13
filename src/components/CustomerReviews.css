@@ -1,5 +1,4 @@
 .review {
-  border: 3px solid #F9E79F;
   border-radius: 8px;
   width: 300px;
   height: 168px;
@@ -11,8 +10,20 @@
   margin-right: 0;
 }
 
+.quote {
+  color: #d1f2ebaf;
+  font-family: 'Secular One', sans-serif;
+  margin: 0;
+  font-size: 180px;
+  position: relative;
+  z-index: -1;
+  left: -126px;
+  bottom: 24px;
+}
+
 .review-text {
   font-size: 20px;
+  color: rgba(32, 32, 32, 0.979);
 }
 
 .review-author {
@@ -20,9 +31,21 @@
   font-size: 26px;
 }
 
-.star {
-  width: 25x;
-  height: 25px;
+.p-rating {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  font-size: 32px;
+}
+
+.p-rating-star {
+  background-color: transparent;
+  border: transparent;
+  color: #F9E79F;
+
+  margin: 0 2px;
+  padding: 0;
 }
 
 @media (max-width: 950px) {
