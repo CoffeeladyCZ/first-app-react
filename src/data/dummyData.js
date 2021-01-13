@@ -121,20 +121,14 @@ export const footerBox = {
 export const reviews = {
   reviewFirst: {
     text: 'Když nevím jakou kávu si koupit, e-shop Coffeeshot je vždy jistota. Mají tu jen ty nejlepší kousky.',
-    author: 'Marcela',
-    src: star,
-    alt: 'star'
+    author: 'Marcela'
   },
   reviewSecond: {
     text: 'Hlavně jejich přístup. Nikdo vám lépe neporadí, už při první větě cítíte, že milují kávu.',
-    author: 'Martin',
-    src: star,
-    alt: 'star'
+    author: 'Martin'
   },
   reviewThird: {
     text: 'Občas si chodím na jejich pobočku povídat o kávě. Zaměstnanci jsou skvělí.',
-    author: 'Anežka',
-    src: star,
-    alt: 'star'
+    author: 'Anežka'
   }
 }

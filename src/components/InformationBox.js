@@ -1,6 +1,8 @@
 import React from 'react';
 
 import './InformationBox.css';
+import coffeeCup from "../img/coffee-cup.png";
+
 
 class InformationBox extends React.Component {
   render () {
@@ -20,6 +22,7 @@ class InformationBox extends React.Component {
         </div>
         <div className="informationBoxContent right">
           <p className="boxSecondContent">{text}</p>
+          <img className="coffeeCup" src={coffeeCup} />
         </div>
       </section>
     );

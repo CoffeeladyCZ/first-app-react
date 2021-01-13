@@ -35,6 +35,14 @@
   padding: 3.125rem;
 }
 
+.coffeeCup {
+    position: relative;
+    z-index: 1;
+    max-width: 35%;
+    right: -472px;
+    top: -50px;
+}
+
 @media (max-width: 1280px) {
   .informationBox {
     display: block;
