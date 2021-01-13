@@ -22,7 +22,7 @@ class InformationBox extends React.Component {
         </div>
         <div className="informationBoxContent right">
           <p className="boxSecondContent">{text}</p>
-          <img className="coffeeCup" src={coffeeCup} />
+          <img className="coffeeCup" src={coffeeCup} alt="coffeeCup" />
         </div>
       </section>
     );
