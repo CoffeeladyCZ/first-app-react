@@ -78,7 +78,7 @@ export const informationBoxContent = {
     liFirst: "Život je příliš krátký na špatnou kávu.",
     liSecond: "Dobrá káva dělá den hezčí a veselejší.",
     liThird: "Zapomeňte na lásku, propadněte kávě.",
-    text: "Ne nadarmo se říká, že život je příliš krátký na špatnou kávu. Naštěstí u špatnou kávu vůbec nemáme."
+    text: "Ne nadarmo se říká, že život je příliš krátký na špatnou kávu. Naštěstí u nás špatnou kávu vůbec nemáme."
 }
 
 export const carouselBanner = {
