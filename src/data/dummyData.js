@@ -5,9 +5,6 @@ import arabica from '../img/coffee-arabica.svg';
 import bannerFirst from '../img/banner1.jpg';
 import bannerSecond from '../img/banner2.jpg';
 import bannerThird from '../img/banner3.jpg';
-import star from '../img/star.svg';
-
-
 
 export const productBoxContent = {
   firstProduct: {
