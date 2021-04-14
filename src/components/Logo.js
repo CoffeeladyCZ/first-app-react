@@ -2,7 +2,7 @@ import React from 'react';
 import './Logo.css';
 
 const Logo = ({src, alt}) => {
-  const logoClassName = (alt === 'coffee-logo' ? "leftnav" : "none"); // ternarni operator
+  const logoClassName = (alt === 'coffee-logo' ? "leftnav" : "none"); 
 
   return (
     <div>
@@ -13,6 +13,3 @@ const Logo = ({src, alt}) => {
 };
 
 export default Logo;
-
-
-// refaktorovat funkci, img dát zvlášť

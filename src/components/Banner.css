@@ -1,23 +1,23 @@
-.sectionBanner {
+.sectionBanners {
   display: flex;
   justify-content: center;
   margin: 1.875rem 0;
 }
 
-.sectionBanner p {
+.sectionBanners p {
   font-size: 3em;
   color: #fff;
 }
 
-.secondBannerLittle {
+.mainBanner {
+  min-width: 35%;
+  height: auto;
+}
+
+.banners {
   padding-left: 1.25rem;
   display: flex;
   flex-direction: column;
-}
-
-.mainBanner {
-  width: 50rem;
-  height: 25rem;
 }
 
 .mainBanner img {
@@ -45,17 +45,27 @@
 }
 
 .carousel .slider-wrapper {
-  width: 50rem;
-}
+  max-width: 50rem;
+  height: auto;
+} 
+
 .carousel-status {
   display: none;
 }
 
 @media (max-width: 1280px) {
-  .secondBanner {
+  .banners {
     display: none;
   }
+
   .thirdBanner {
     display: none;
   }
+
+  .carousel-root {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+
 }

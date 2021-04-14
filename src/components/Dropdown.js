@@ -49,6 +49,7 @@ class Dropdown extends React.Component {
           <div className="item">{dropdown.kavovary.brandSecond}</div>
           <div className="item">{dropdown.kavovary.brandThird}</div>
         </div>}
+        <i class="fas fa-chevron-down"></i>
       </div>
     )
   }

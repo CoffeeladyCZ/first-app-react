@@ -7,7 +7,7 @@ import kosik from './img/kosik.png';
 
 import ProductBox from './components/ProductBox';
 import Logo from './components//Logo';
-import TopMenu from './components//TopMenu';
+import Navigation from './components/Navigation';
 import Banner from './components/Banner';
 import InformationBox from './components/InformationBox';
 // import InstagramFeed from './components/InstagramFeed'; Commented out because this library doesnt work due to https://github.com/jamesmoriarty/react-instagram-authless-feed/issues/12
@@ -89,10 +89,10 @@ class App extends React.Component {
           <ShoppingCard alt='shoppingCard' src={kosik} count={this.state.count}/>
         </header>
         <nav>
-          <TopMenu />
+          <Navigation />
         </nav>
 
-        <section className="sectionBanner">
+        <section className="sectionBanners">
           <Carousel showArrows={true} autoPlay={true} interval={10000}>
             <div className='mainBanner'>
                 <img src={carouselBanner.bannerFirst} alt='' />
@@ -105,7 +105,7 @@ class App extends React.Component {
             </div>
           </Carousel>
 
-          <div className="secondBannerLittle">
+          <div className="banners">
             <Banner className={bannerSection.second} />
             <Banner className={bannerSection.third} />
           </div>

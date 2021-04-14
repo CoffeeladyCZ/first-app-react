@@ -74,7 +74,7 @@ export const bannerSection = {
 };
 
 export const informationBoxContent = {
-    nadpis: "Proč bychom měli pít kávu?",
+    title: "Proč bychom měli pít kávu?",
     liFirst: "Život je příliš krátký na špatnou kávu.",
     liSecond: "Dobrá káva dělá den hezčí a veselejší.",
     liThird: "Zapomeňte na lásku, propadněte kávě.",

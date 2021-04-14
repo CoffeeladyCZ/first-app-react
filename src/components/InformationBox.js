@@ -6,13 +6,13 @@ import coffeeCup from "../img/coffee-cup.png";
 
 class InformationBox extends React.Component {
   render () {
-    const {nadpis, liFirst, liSecond, liThird, text} = this.props.content;
+    const {title, liFirst, liSecond, liThird, text} = this.props.content;
 
     return (
       <section className="informationBox">
         <div className="informationBoxContent left">
           <div className="informationBoxContentInside">
-            <p className="nadpis">{nadpis}</p>
+            <p className="title">{title}</p>
             <ul>
               <li>{liFirst}</li>
               <li>{liSecond}</li>

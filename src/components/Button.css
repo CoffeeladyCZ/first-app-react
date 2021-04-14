@@ -9,12 +9,12 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* TODO for @marcela add 3 more types of button styles */
 .orange {
   border: 0.0625rem solid;
   background-color: #ff6954;;
   width: 12.5rem;
 }
+
 .orange:hover {
   color: #ff6954;;
   background-color: #ffffff;

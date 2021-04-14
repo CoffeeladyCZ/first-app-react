@@ -27,6 +27,8 @@ class DropdownSecond extends React.Component {
           <div className="item">{dropdown.coffee.brandSecond}</div>
           <div className="item">{dropdown.coffee.brandThird}</div>
         </div>}
+        <i class="fas fa-chevron-down"></i>
+
       </div>
     )
   }

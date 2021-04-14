@@ -3,12 +3,12 @@ import React from 'react';
 import Dropdown from './Dropdown';
 import DropdownSecond from './DropdownSecond';
 
-import './TopMenu.css';
+import './Navigation.css';
 
-class TopMenu extends React.Component {
+class Navigation extends React.Component {
   render () {
     return (
-      <nav className="topMenu">
+      <nav className="topNavigation">
         <ul>
           <li><Dropdown title="Kávovary" /></li>
           <li><DropdownSecond title="Káva" /></li>
@@ -21,4 +21,4 @@ class TopMenu extends React.Component {
   }
 }
 
-export default TopMenu;
+export default Navigation;

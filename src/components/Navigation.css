@@ -1,25 +1,32 @@
-.topMenu {
+.topNavigation {
     display: flex;
     justify-content: space-around;
-    background-color: #683539;
+    /* background-color: #683539; */
+    border-top: 1px solid #683539;
+    border-bottom: 1px solid #683539;
     width: 100%;
 }
 
-.topMenu a,
-.topMenu > ul > li > div {
+.down {
+
+}
+
+.topNavigation a,
+.topNavigation > ul > li > div {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
-    color: #fff;
+    color: #683539;    
     background-color: transparent ;
     margin: 0;
     position: relative;
     transition: all 0.15s ease-in;
     z-index: 1;
+
 }
 
-.topMenu a::after,
-.topMenu > ul > li > div::after  {
+.topNavigation a::after,
+.topNavigation > ul > li > div::after  {
     content: '';
     position: absolute;
     top: 0;
@@ -28,18 +35,18 @@
     right: 0;
     width: 0;
     z-index: -1;
-    background-color: #ff6954;
+    background-color: #fff;
     transition: all 0.15s ease-in;
 
 }
 
-.topMenu a:hover::after,
-.topMenu > ul > li > div:hover::after {
+.topNavigation a:hover::after,
+.topNavigation > ul > li > div:hover::after {
     width: 100%;
-    background-color: #ff6954;
+    background-color: #fff;
 }
 
-.topMenu ul {
+.topNavigation ul {
     margin: 0;
     width: 100%;
     display: flex;
@@ -47,15 +54,17 @@
     justify-content: center;
     align-items: center;
     align-content: center;
+    flex-wrap: wrap;
+
 }
-.topMenu li {
+.topNavigation li {
     display: inline-flex;
-    background-color: #683539;
-    border: 1px solid#683539;
+    background-color: #fff;
+    /* border: 1px solid #683539; */
     list-style: none; 
     text-transform: uppercase;
     font-size: 16px;
-    color: #fff;
+    color: #683539;
     flex: 0 0 auto;
     max-width: 12.5rem;
     min-width: 6.25rem;
@@ -64,12 +73,22 @@
     align-self: center;
 }
 
-.topMenu li > * {
-    height: 100%;
-    padding: 0.625rem 1.875rem;
+
+.a-chevron-down {
+    color: #683539;
 }
 
-.topMenu a:hover,
-.topMenu >ul  > li > div:hover {
-    color: #fff;
+.fas {
+    padding-left: 10px;
+}
+
+.topNavigation li > * {
+    height: 100%;
+    padding: 0.9375rem 1.875rem;
+}
+
+.topNavigation a:hover,
+.topNavigation > ul > li > div:hover {
+    color: #ff6954;
+    z-index: 2;
 }
