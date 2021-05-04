@@ -64,12 +64,12 @@ footer {
   }
 }
 
-@media (max-width: 910px) {
+/* @media (max-width: 910px) {
   nav {
       flex-wrap: wrap;
       display: flex;
   }
-}
+} */
 
 @media (max-width: 830px) {
   .productBoxNone {

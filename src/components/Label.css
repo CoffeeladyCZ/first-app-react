@@ -1,0 +1,29 @@
+.label {
+  margin: 0;
+  padding: 10px 30px;
+  border-radius: 20px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 1;
+}
+
+.none {
+  display: none;
+}
+
+.label p {
+  margin: 0;
+  text-transform: uppercase;
+  color: #1b1b1b;
+  font-weight: 600;
+}
+
+.giftFree {
+  background-color: #F9E79F;
+}
+
+.newProduct {
+  background-color: #D1F2EB;
+}
+

@@ -1,14 +1,9 @@
 .topNavigation {
     display: flex;
     justify-content: space-around;
-    /* background-color: #683539; */
     border-top: 1px solid #683539;
     border-bottom: 1px solid #683539;
     width: 100%;
-}
-
-.down {
-
 }
 
 .topNavigation a,
@@ -17,10 +12,10 @@
     text-transform: uppercase;
     font-size: 16px;
     color: #683539;    
-    background-color: transparent ;
+    /* background-color: transparent ; */
     margin: 0;
     position: relative;
-    transition: all 0.15s ease-in;
+    /* transition: all 0.15s ease-in; */
     z-index: 1;
 
 }
@@ -35,15 +30,15 @@
     right: 0;
     width: 0;
     z-index: -1;
-    background-color: #fff;
-    transition: all 0.15s ease-in;
+    /* background-color: #fff;
+    transition: all 0.15s ease-in; */
 
 }
 
 .topNavigation a:hover::after,
 .topNavigation > ul > li > div:hover::after {
     width: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .topNavigation ul {
@@ -60,7 +55,6 @@
 .topNavigation li {
     display: inline-flex;
     background-color: #fff;
-    /* border: 1px solid #683539; */
     list-style: none; 
     text-transform: uppercase;
     font-size: 16px;
@@ -72,7 +66,6 @@
     align-items: center;
     align-self: center;
 }
-
 
 .a-chevron-down {
     color: #683539;
@@ -92,3 +85,70 @@
     color: #ff6954;
     z-index: 2;
 }
+
+/* i.fas.fa-chevron-down:hover {
+    transform: rotate(180deg);
+} */
+
+/* HAMBURGER */
+  
+.active {
+color:#9F2B1F;
+}
+ 
+.menu-btn {
+    display: none;
+}
+
+/* @media (max-width: 900px) {
+
+    .topNavigation .menu-icon {
+        padding: 28px 32px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+  
+    .topNavigation .menu-icon .nav-icon {
+        background: #9F2B1F;
+        display: block;
+        margin-right: 20px;
+        height: 2px;
+        width: 30px;
+        position: relative;
+        transition: background .2s ease-out;
+    }
+    
+    .topNavigation .menu-icon .nav-icon:before,
+    .topNavigation .menu-icon .nav-icon:after {
+        background: #9F2B1F;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+    }
+    
+    .topNavigation .menu-icon .nav-icon:before {
+        top: 8px;
+    }
+  
+    .topNavigation .menu-icon .nav-icon:after {
+        top: -8px;
+    }
+  
+    .topNavigation .menu-btn {
+        text-align: left;
+        display: none;
+  }
+  
+  .topNavigation .menu-btn:checked ~ .navigationMenu {
+    max-height: 300px;
+    width: 100%;
+  }
+  
+  .topNavigation .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+  }
+} */

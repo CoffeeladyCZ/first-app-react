@@ -21,6 +21,11 @@
   border-bottom: none;
 }
 
+.item:hover {
+  color: #683539;
+
+}
+
 .isOpen {
   position: absolute;
   background: #ff6954;;

@@ -16,7 +16,7 @@ import Clock from './components/Clock';
 import ShoppingCard from './components/ShoppingCard';
 import CustomerReviews from './components/CustomerReviews';
 
-import { productBoxContent, bannerSection, productBoxImage, informationBoxContent, carouselBanner, reviews } from './data/dummyData';
+import { productBoxContent, bannerSection, informationBoxContent, carouselBanner, reviews } from './data/dummyData';
 
 import './App.css';
 
@@ -31,23 +31,7 @@ class App extends React.Component {
     }
   }
 
-  handleAddProduct = () => {
-    this.setState(
-      {count: this.state.count + 1}
-    )
-  }
-
-  handleRemoveProduct = () => {
-    if (this.state.count <= 0) {
-      this.setState({
-          count:0
-      });
-    } else {
-      this.setState({
-          count: this.state.count - 1
-      });
-    }
-  };
+K
 
   // zobrazení aktuálního času
   componentDidMount() {
@@ -67,19 +51,6 @@ class App extends React.Component {
     });
   }
 
-  // změna barvy banneru při kliknutí
-  changeColor = () => {
-    if (this.state.color === true) {
-      this.setState({
-        className: 'pink'
-      });
-    } else {
-      this.setState({
-        className: 'brown'
-      });
-    }
-  };
-
   render() {
     return (
       <div className="App">
@@ -95,13 +66,13 @@ class App extends React.Component {
         <section className="sectionBanners">
           <Carousel showArrows={true} autoPlay={true} interval={10000}>
             <div className='mainBanner'>
-                <img src={carouselBanner.bannerFirst} alt='' />
+                <img src={carouselBanner.bannerFirst} alt='banner' />
             </div>
             <div className='mainBanner'>
-                <img src={carouselBanner.bannerSecond} alt='' />
+                <img src={carouselBanner.bannerSecond} alt='banner' />
             </div>
             <div className='mainBanner'>
-                <img src={carouselBanner.bannerThird} alt='' />
+                <img src={carouselBanner.bannerThird} alt='banner' />
             </div>
           </Carousel>
 
@@ -112,25 +83,37 @@ class App extends React.Component {
         </section>
 
         <section >
-          <h3>Čerstvě pražená várka kávy</h3>
+          <h3>Ochutnejte čerstvé novinky</h3>
           <div className="sectionBox productBoxNone">
+
+           {/* productBoxContent.forEach(entry => {
+              
             <ProductBox
-              content={productBoxContent.firstProduct}
-              image={productBoxImage.first}
+              content={entry}
+              image={entry}
+              handleAddProduct={this.handleAddProduct}
+              handleRemoveProduct={this.handleRemoveProduct}
+              count={this.state.count}
+              />
+            }) */}
+           
+            <ProductBox
+              content={productBoxContent[0]}
+              image={productBoxContent[0]}
               handleAddProduct={this.handleAddProduct}
               handleRemoveProduct={this.handleRemoveProduct}
               count={this.state.count}
               />
             <ProductBox
-              content={productBoxContent.secondProduct}
-              image={productBoxImage.second}
+              content={productBoxContent[1]}
+              image={productBoxContent[1]}
               handleAddProduct={this.handleAddProduct}
               handleRemoveProduct={this.handleRemoveProduct}
               count={this.state.count}
               />
             <ProductBox
-              content={productBoxContent.thirdProduct}
-              image={productBoxImage.third}
+              content={productBoxContent[2]}
+              image={productBoxContent[2]}
               handleAddProduct={this.handleAddProduct}
               handleRemoveProduct={this.handleRemoveProduct}
               count={this.state.count}
@@ -149,10 +132,38 @@ class App extends React.Component {
         <section>
           <h3>Produkty za výhodnou cenu</h3>
           <div className="sectionBox productBoxes">
-            <ProductBox className="box" content={productBoxContent.fourthProduct} image={productBoxImage.fourth} />
-            <ProductBox className="box" content={productBoxContent.firstProduct} image={productBoxImage.first} />
-            <ProductBox className="box" content={productBoxContent.secondProduct} image={productBoxImage.second} />
-            <ProductBox className="box" content={productBoxContent.thirdProduct} image={productBoxImage.third} />
+            <ProductBox 
+              className="box" 
+              content={productBoxContent[3]} 
+              image={productBoxContent[3]}
+              handleAddProduct={this.handleAddProduct}
+              handleRemoveProduct={this.handleRemoveProduct}
+              count={this.state.count}
+               />
+            <ProductBox 
+              className="box" 
+              content={productBoxContent[0]} 
+              image={productBoxContent[0]}
+              handleAddProduct={this.handleAddProduct}
+              handleRemoveProduct={this.handleRemoveProduct}
+              count={this.state.count} 
+              />
+            <ProductBox 
+              className="box" 
+              content={productBoxContent[1]} 
+              image={productBoxContent[1]} 
+              handleAddProduct={this.handleAddProduct}
+              handleRemoveProduct={this.handleRemoveProduct}
+              count={this.state.count}
+              />
+            <ProductBox 
+              className="box" 
+              content={productBoxContent[2]} 
+              image={productBoxContent[2]} 
+              handleAddProduct={this.handleAddProduct}
+              handleRemoveProduct={this.handleRemoveProduct}
+              count={this.state.count}
+              />
           </div>
         </section>
 
