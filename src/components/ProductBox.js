@@ -19,22 +19,11 @@ class ProductBox extends React.Component {
 
     let showGiftFree = price > 500;
 
-  //   let showNewsLabel;
-  //   productBoxContent.forEach(entry => {
-  //     let datum = entry[1].datum;
-  //     if (product.datum === '2021-04-01') {
-  //       showNewsLabel = <Label name={labels.newProduct.title} className={labels.newProduct.className} />;
-  //     } else {
-  //       showNewsLabel = null;
-  //     }
-  //     console.log(showNewsLabel)
-  // })
-  
-
     return (
       <div className="productBox">
-          {showGiftFree && <Label name={labels.giftFree.title} className={labels.giftFree.className} />}
-          {/* {showNewsLabel} */}
+          {
+            showGiftFree && <Label name={labels.giftFree.title} className={labels.giftFree.className} />
+          }
         <img className="imageProduct" src={src} alt={alt} />
         <p className="nameOfProduct">{title}</p>
         <p className="description">{description}</p>

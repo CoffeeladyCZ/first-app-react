@@ -31,7 +31,23 @@ class App extends React.Component {
     }
   }
 
-K
+  handleAddProduct = () => {
+    this.setState(
+      {count: this.state.count + 1}
+    )
+  };
+
+  handleRemoveProduct = () => {
+    if (this.state.count <= 0) {
+      this.setState({
+        count:0
+      });
+    } else {
+      this.setState({
+          count: this.state.count - 1
+      });
+    }
+  };
 
   // zobrazení aktuálního času
   componentDidMount() {
@@ -85,39 +101,27 @@ K
         <section >
           <h3>Ochutnejte čerstvé novinky</h3>
           <div className="sectionBox productBoxNone">
-
-           {/* productBoxContent.forEach(entry => {
-              
-            <ProductBox
-              content={entry}
-              image={entry}
-              handleAddProduct={this.handleAddProduct}
-              handleRemoveProduct={this.handleRemoveProduct}
-              count={this.state.count}
-              />
-            }) */}
-           
             <ProductBox
               content={productBoxContent[0]}
               image={productBoxContent[0]}
               handleAddProduct={this.handleAddProduct}
               handleRemoveProduct={this.handleRemoveProduct}
               count={this.state.count}
-              />
+            />
             <ProductBox
               content={productBoxContent[1]}
               image={productBoxContent[1]}
               handleAddProduct={this.handleAddProduct}
               handleRemoveProduct={this.handleRemoveProduct}
               count={this.state.count}
-              />
+            />
             <ProductBox
               content={productBoxContent[2]}
               image={productBoxContent[2]}
               handleAddProduct={this.handleAddProduct}
               handleRemoveProduct={this.handleRemoveProduct}
               count={this.state.count}
-              />
+            />
           </div>
         </section>
 

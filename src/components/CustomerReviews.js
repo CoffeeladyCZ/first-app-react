@@ -9,11 +9,11 @@ class CustomerReviews extends React.Component {
         <p className="quote">„</p>
         <q className="review-text">{text}</q>
         <p className="review-author">{author}</p>
-        <div class="p-rating">
-          <button class="p-rating-star">★</button>
-          <button class="p-rating-star">★</button>
-          <button class="p-rating-star">★</button>
-          <button class="p-rating-star">★</button>
+        <div className="p-rating">
+          <button className="p-rating-star">★</button>
+          <button className="p-rating-star">★</button>
+          <button className="p-rating-star">★</button>
+          <button className="p-rating-star">★</button>
         </div>
       </div>
 
